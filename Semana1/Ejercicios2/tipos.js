@@ -1,0 +1,13 @@
+console.log(typeof 42);
+console.log(typeof 3.4);
+console.log(typeof 'c');
+console.log(typeof true);
+console.log(typeof True);
+console.log(typeof "hi");
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof Symbol());
+console.log(typeof 10n);
+console.log(typeof []);
+console.log(typeof function (){});
+console.log(typeof {});
