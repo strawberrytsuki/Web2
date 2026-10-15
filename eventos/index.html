@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos en JavaScript</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="eventos.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Laboratorio de eventos</h1>
+    <p>Unidad 4 - JavaScript</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Eventos de ratón</h2>
+
+        <div id="zonaRaton" class="zona">
+            Interactúa con el ratón aquí
+        </div>
+
+        <p id="salidaRaton" class="salida">
+            Esperando un evento...
+        </p>
+    </section>
+
+
+
+    <section>
+        <h2>Objeto event</h2>
+
+        <button id="botonEvento">
+            Generar evento
+        </button>
+
+        <p id="salidaEvento" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Event Bubbling</h2>
+
+        <div id="abuelo" class="nivel abuelo">
+
+            Abuelo
+
+            <div id="padre" class="nivel padre">
+
+                Padre
+
+                <button id="hijo">
+                    Hijo
+                </button>
+
+            </div>
+
+        </div>
+
+        <p id="salidaBubbling" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Prevent Default</h2>
+
+        <a id="enlace"
+           href="https://www.unam.mx">
+            Visitar UNAM
+        </a>
+
+        <p id="salidaDefault" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Eventos de teclado</h2>
+
+        <input
+                type="text"
+                id="entradaTeclado"
+                placeholder="Escribe algo">
+
+        <p id="salidaTeclado" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Eventos de formulario</h2>
+
+        <form id="formulario" action="https://www.google.com">
+
+            <label>
+                Nombre:
+                <input
+                        type="text"
+                        id="nombre"
+                        required>
+            </label>
+
+            <label>
+                Carrera:
+
+                <select id="carrera">
+                    <option value="">Selecciona</option>
+                    <option>Ingeniería en Computación</option>
+                    <option>Ingeniería Civil</option>
+                    <option>Ingeniería Mecánica</option>
+                </select>
+
+            </label>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+            <button type="reset">
+                Limpiar
+            </button>
+
+        </form>
+
+        <p id="salidaFormulario" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Arrastrar y soltar</h2>
+
+        <div
+                id="elementoArrastrable"
+                class="arrastrable"
+                draggable="true">
+
+            Arrástrame
+
+        </div>
+
+        <div
+                id="zonaDrop"
+                class="drop">
+
+            Suelta aquí
+
+        </div>
+
+        <p id="salidaDrag" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Portapapeles</h2>
+
+        <textarea
+                id="textoClipboard"
+                rows="4"
+                cols="40">Selecciona, copia, corta o pega texto aquí.</textarea>
+
+        <p id="salidaClipboard" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Eventos de impresión</h2>
+
+        <button id="botonImprimir">
+            Imprimir página
+        </button>
+
+        <p id="salidaImpresion" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Eventos multimedia</h2>
+
+        <video id="video" controls width="400">
+
+            <source
+                    src="video.mp4"
+                    type="video/mp4">
+
+            Tu navegador no soporta video.
+
+        </video>
+
+        <p id="salidaVideo" class="salida"></p>
+    </section>
+
+
+
+    <section>
+        <h2>Eventos de animación</h2>
+
+        <div id="cajaAnimada" class="caja">
+            Animación
+        </div>
+
+        <button id="iniciarAnimacion">
+            Iniciar animación
+        </button>
+
+        <p id="salidaAnimacion" class="salida"></p>
+    </section>
+
+
+    
+    <section>
+        <h2>Eventos de transición</h2>
+
+        <div id="cajaTransicion" class="caja">
+            Transición
+        </div>
+
+        <button id="iniciarTransicion">
+            Cambiar tamaño
+        </button>
+
+        <p id="salidaTransicion" class="salida"></p>
+    </section>
+
+</main>
+
+</body>
+</html>
